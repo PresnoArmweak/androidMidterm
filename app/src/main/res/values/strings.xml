@@ -9,4 +9,5 @@
     <string name="standard_shipping_20_minutes">Standard shipping (20 minutes)</string>
     <string name="pickup_your_order">Pickup your order</string>
     <string name="submit_your_order">Submit your order</string>
+    <string name="type_of_coffeeLable">Type of Coffee: </string>
 </resources>
