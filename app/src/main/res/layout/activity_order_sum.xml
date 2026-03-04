@@ -1,34 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/orderSum"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:rowCount="2"
+    android:columnCount="4"
     android:padding="10dp"
     android:orientation="vertical"
+    android:layout_gravity="center"
     >
 
     <ImageView
         android:id="@+id/coffee"
+        android:src="@drawable/coffeeimage"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:contentDescription="@string/coffee_image" />
 
     <TextView
         android:id="@+id/coffeeType"
-        android:layout_below="@id/coffee"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 
     <TextView
         android:id="@+id/shipping"
-        android:layout_below="@+id/coffeeType"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 
     <TextView
         android:id="@+id/price"
-        android:layout_below="@+id/shipping"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 
-</RelativeLayout>
+</GridLayout>
