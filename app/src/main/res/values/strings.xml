@@ -3,14 +3,16 @@
     <string name="coffee_image">Coffee Image</string>
     <string name="type_of_coffee">Type of Coffee</string>
     <string name="image_of_coffee">Image of coffee</string>
-    <string name="name_on_order">Name on order</string>
+    <string name="name_on_order">Name on order: </string>
     <string name="type_of_shipping">Type of shipping</string>
     <string name="express_shipping_2_minutes">Express shipping (2 minutes)</string>
     <string name="standard_shipping_20_minutes">Standard shipping (20 minutes)</string>
     <string name="pickup_your_order">Pickup your order</string>
     <string name="submit_your_order">Submit your order</string>
-    <string name="type_of_coffeeLable">Type of Coffee: </string>
-    <string name="name_on_orderLable">Name on Order</string>
+    <string name="type_of_coffee_label">Type of Coffee:</string>
+    <string name="name_on_order_label">Name on Order:</string>
+    <string name="shipping_label">Shipping:</string>
+    <string name="price_label">Total Price:</string>
     <string name="nameHint">Preston</string>
     <string name="coffeeTypeHint">Green</string>
 </resources>

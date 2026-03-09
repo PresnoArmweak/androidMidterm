@@ -20,13 +20,32 @@ class OrderSum : AppCompatActivity() {
             insets
         }
 
-        val coffeeType = findViewById<TextView>(R.id.coffeeType)
-        val orderName = findViewById<TextView>(R.id.orderName)
-
-
+        val coffeeType = findViewById<TextView>(R.id.coffeeTypeResult)
+        val orderName = findViewById<TextView>(R.id.orderNameResult)
+        val shippingDisplay = findViewById<TextView>(R.id.shippingResult)
+        val priceDisplay = findViewById<TextView>(R.id.priceResult)
 
         val typeText = intent.getStringExtra("coffeeType")
+        val nameText = intent.getStringExtra("orderName")
+        val shippingText = intent.getStringExtra("shippingType")
 
-        coffeeType.text = " $typeText"
+        orderName.text = nameText
+        coffeeType.text = typeText
+        shippingDisplay.text = shippingText
+
+        // Compare using string resources to ensure exact match
+        val express = getString(R.string.express_shipping_2_minutes)
+        val standard = getString(R.string.standard_shipping_20_minutes)
+        val pickup = getString(R.string.pickup_your_order)
+
+        if (shippingText == express) {
+            priceDisplay.text = "$12.00"
+        } else if (shippingText == standard) {
+            priceDisplay.text = "$8.00"
+        } else if (shippingText == pickup) {
+            priceDisplay.text = "$5.00"
+        } else {
+            priceDisplay.text = "Your order type is unknown"
+        }
     }
 }
