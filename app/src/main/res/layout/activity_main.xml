@@ -1,92 +1,101 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/main"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="10dp"
-    android:layout_gravity="center_horizontal"
-    >
+    android:padding="24dp">
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="200dp"
-       android:contentDescription="@string/image_of_coffee"
-        android:src="@drawable/coffeeimage"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
         android:layout_gravity="center"
-        android:padding="10dp"
-        />
+        android:layout_marginBottom="16dp"
+        android:contentDescription="@string/image_of_coffee"
+        android:scaleType="centerInside"
+        android:src="@drawable/coffeeimage" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/type_of_coffee"
-        android:textSize="20sp"
-        android:gravity="center"
-        />
+        android:textColor="@color/caramel_primary"
+        android:textSize="18sp"
+        android:textStyle="bold" />
 
     <EditText
         android:id="@+id/coffeeType"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:autofillHints="Coffee Type"
-        android:inputType="text"
         android:hint="@string/coffeeTypeHint"
-        />
+        android:inputType="text"
+        android:layout_marginBottom="16dp"
+        android:textColor="?attr/colorSecondary"
+        android:textColorHint="@color/hint_text" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/name_on_order"
-        android:textSize="20sp"
-        android:gravity="center"
-        />
+        android:textColor="@color/caramel_primary"
+        android:textSize="18sp"
+        android:textStyle="bold" />
 
     <EditText
         android:id="@+id/name"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:autofillHints="Name"
-        android:inputType="text"
         android:hint="@string/nameHint"
-        />
+        android:inputType="text"
+        android:layout_marginBottom="16dp"
+        android:textColor="?attr/colorSecondary"
+        android:textColorHint="@color/hint_text" />
+
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:text="@string/type_of_shipping"
-        android:textSize="20sp"
-        />
+        android:textColor="@color/caramel_primary"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp" />
+
     <RadioGroup
         android:id="@+id/shipping"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="24dp">
+
         <RadioButton
             android:id="@+id/express_shipping"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/express_shipping_2_minutes"
-            />
+            android:textColor="?attr/colorSecondary" />
+
         <RadioButton
             android:id="@+id/standard_shipping"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/standard_shipping_20_minutes"
-            />
+            android:textColor="?attr/colorSecondary" />
+
         <RadioButton
             android:id="@+id/pickup_shipping"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/pickup_your_order"
-            />
+            android:textColor="?attr/colorSecondary" />
     </RadioGroup>
+
     <Button
         android:id="@+id/submit"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/submit_your_order"
-        />
-
-
+        style="@style/Widget.Caramel.Button" />
 
 </LinearLayout>

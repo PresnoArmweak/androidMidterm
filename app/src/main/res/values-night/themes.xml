@@ -16,7 +16,7 @@
         <item name="colorOnSecondary">@color/coffee_background</item>
 
         <!-- Text -->
-        <item name="android:textColorPrimary">@color/cream_text</item>
+        <item name="android:textColorPrimary">@color/caramel_primary</item>
         <item name="android:textColorSecondary">@color/muted_text</item>
         <item name="android:textColorHint">@color/hint_text</item>
 

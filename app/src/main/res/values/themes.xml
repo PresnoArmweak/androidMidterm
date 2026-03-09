@@ -2,21 +2,21 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.CampusCoffeeOrder.Caramel" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Backgrounds -->
-        <item name="android:windowBackground">@color/coffee_background</item>
-        <item name="android:colorBackground">@color/coffee_background</item>
-        <item name="colorSurface">@color/coffee_surface</item>
-        <item name="colorOnBackground">@color/cream_text</item>
-        <item name="colorOnSurface">@color/cream_text</item>
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:colorBackground">@color/white</item>
+        <item name="colorSurface">@color/white</item>
+        <item name="colorOnBackground">@color/black</item>
+        <item name="colorOnSurface">@color/black</item>
 
         <!-- Main colors -->
         <item name="colorPrimary">@color/caramel_primary</item>
-        <item name="colorOnPrimary">@color/coffee_background</item>
+        <item name="colorOnPrimary">@color/white</item>
 
-        <item name="colorSecondary">@color/caramel_light</item>
-        <item name="colorOnSecondary">@color/coffee_background</item>
+        <item name="colorSecondary">@color/black</item>
+        <item name="colorOnSecondary">@color/black</item>
 
         <!-- Text -->
-        <item name="android:textColorPrimary">@color/cream_text</item>
+        <item name="android:textColorPrimary">@color/black</item>
         <item name="android:textColorSecondary">@color/muted_text</item>
         <item name="android:textColorHint">@color/hint_text</item>
 
