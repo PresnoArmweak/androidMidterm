@@ -1,9 +1,35 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources>
     <!-- Base application theme. -->
-    <style name="Base.Theme.CampusCoffeeOrder" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    <style name="Base.Theme.CampusCoffeeOrder.Caramel" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Backgrounds -->
+        <item name="android:windowBackground">@color/coffee_background</item>
+        <item name="android:colorBackground">@color/coffee_background</item>
+        <item name="colorSurface">@color/coffee_surface</item>
+        <item name="colorOnBackground">@color/cream_text</item>
+        <item name="colorOnSurface">@color/cream_text</item>
+
+        <!-- Main colors -->
+        <item name="colorPrimary">@color/caramel_primary</item>
+        <item name="colorOnPrimary">@color/coffee_background</item>
+
+        <item name="colorSecondary">@color/caramel_light</item>
+        <item name="colorOnSecondary">@color/coffee_background</item>
+
+        <!-- Text -->
+        <item name="android:textColorPrimary">@color/cream_text</item>
+        <item name="android:textColorSecondary">@color/muted_text</item>
+        <item name="android:textColorHint">@color/hint_text</item>
+
+        <!-- radio buttons -->
+        <item name="colorControlActivated">@color/caramel_primary</item>
+        <item name="colorControlNormal">@color/hint_text</item>
+
+        <!-- Button -->
+        <item name="materialButtonStyle">@style/Widget.Caramel.Button</item>
+
+        <!-- Edit Text -->
+        <item name="editTextStyle">@style/Widget.Caramel.EditText</item>
     </style>
 
-    <style name="Theme.CampusCoffeeOrder" parent="Base.Theme.CampusCoffeeOrder" />
+    <style name="Theme.CampusCoffeeOrder.Caramel" parent="Base.Theme.CampusCoffeeOrder.Caramel" />
 </resources>

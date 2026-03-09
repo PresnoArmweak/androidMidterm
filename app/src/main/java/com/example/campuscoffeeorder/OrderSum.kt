@@ -21,6 +21,8 @@ class OrderSum : AppCompatActivity() {
         }
 
         val coffeeType = findViewById<TextView>(R.id.coffeeType)
+        val orderName = findViewById<TextView>(R.id.orderName)
+
 
 
         val typeText = intent.getStringExtra("coffeeType")

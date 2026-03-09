@@ -10,4 +10,7 @@
     <string name="pickup_your_order">Pickup your order</string>
     <string name="submit_your_order">Submit your order</string>
     <string name="type_of_coffeeLable">Type of Coffee: </string>
+    <string name="name_on_orderLable">Name on Order</string>
+    <string name="nameHint">Preston</string>
+    <string name="coffeeTypeHint">Green</string>
 </resources>

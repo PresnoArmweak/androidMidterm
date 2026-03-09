@@ -6,6 +6,7 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.RadioButton
 import android.widget.RadioGroup
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -22,18 +23,22 @@ class MainActivity : AppCompatActivity() {
             insets
         }
 
-        val  coffeeType = findViewById<EditText>(R.id.coffeeType)
-        val  orderName = findViewById<EditText>(R.id.name)
-
-
+        val coffeeTypeET = findViewById<EditText>(R.id.coffeeType)
+        val orderNameET = findViewById<EditText>(R.id.name)
         val btnSubmit = findViewById<Button>(R.id.submit)
-
 
         btnSubmit.setOnClickListener {
             val shippingGroup = findViewById<RadioGroup>(R.id.shipping)
+            
+            val coffeeType = coffeeTypeET.text.toString()
+            val orderName = orderNameET.text.toString()
+            
+            if (coffeeType.isEmpty() || orderName.isEmpty() || shippingGroup.checkedRadioButtonId == -1) {
+                Toast.makeText(this, "Please fill in all fields", Toast.LENGTH_SHORT).show() // Toast message
+                return@setOnClickListener
+            }
+            
             val tempShippingType = shippingGroup.findViewById<RadioButton>(shippingGroup.checkedRadioButtonId)
-            val coffeeType = coffeeType.text.toString()
-            val orderName = orderName.text.toString()
             val shippingType = tempShippingType.text.toString()
 
             val intent = Intent(this@MainActivity, OrderSum::class.java)
@@ -44,6 +49,5 @@ class MainActivity : AppCompatActivity() {
 
             startActivity(intent)
         }
-
     }
 }
